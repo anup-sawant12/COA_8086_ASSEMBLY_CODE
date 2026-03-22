@@ -15,11 +15,7 @@ This repository contains basic programs written in **8086 Assembly Language** fo
 * Emulator: EMU8086 / DOSBox / MASM / TASM
 * Basic understanding of assembly syntax
 
-## ▶️ How to Run
 
-1. Open the program in your emulator
-2. Assemble the code
-3. Run and observe output
 
 ## 📁 Structure
 
