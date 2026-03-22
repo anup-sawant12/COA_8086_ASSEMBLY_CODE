@@ -1,0 +1,24 @@
+DATA SEGMENT
+    ASCII DW 3837H
+    BCD DB ?
+DATA ENDS
+
+CODE SEGMENT
+ASSUME CS:CODE,DS:DATA
+    START:
+        MOV AX,DATA
+        MOV DS,AX
+
+        MOV BX,ASCII
+        AND BX,0F0FH
+
+        MOV CL,4
+        SHL BH,CL
+
+        OR BH,BL
+
+        MOV BCD , BH
+        MOV AH,4CH
+        INT 21H
+    CODE ENDS
+    END START
